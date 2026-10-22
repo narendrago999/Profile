@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narendra Godara | Senior Data Engineer — One-Page Executive Workspace</title>
+  <meta name="description" content="Interactive One-Page Portfolio of Narendra Godara - Senior Data Engineer specializing in Microsoft Fabric, Databricks, Snowflake, PySpark, Advanced SQL, Cloud Architecture, and DevOps.">
+  <meta name="keywords" content="Narendra Godara, Senior Data Engineer, Microsoft Fabric, Databricks, Snowflake, PySpark, Python, dbt, Apache Airflow, OneLake, Delta Lake, Unity Catalog, Azure, AWS, SQL">
+  <meta name="author" content="Narendra Godara">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%232563eb'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='900' font-size='50'>NG</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme one-pager-mode">
+  <!-- Interactive Canvas Background for floating data nodes -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- APP SHELL: Top Executive Navigation -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-group">
+        <div class="logo-badge">NG</div>
+        <div class="brand-text">
+          <span class="brand-name">Narendra Godara</span>
+          <span class="brand-title">Senior Data Engineer • Fabric | Databricks | Snowflake</span>
+        </div>
+      </div>
+
+      <!-- Quick Availability Indicator -->
+      <div class="header-status-pill">
+        <span class="status-dot"></span>
+        <span class="status-text">Available for Senior &amp; Lead Roles</span>
+      </div>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <button class="btn btn-outline btn-sm" id="btn-quick-coverletter" title="Open Cover Letter">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Cover Letter</span>
+        </button>
+        <button class="btn btn-primary btn-sm" id="btn-open-resume-modal" title="View & Print Official Resume">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>Resume (CV)</span>
+        </button>
+        <a href="tel:+919352641216" class="icon-contact-btn" title="Call Narendra (+91 9352641216)">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="mailto:narendrago999@gmail.com" class="icon-contact-btn" title="Email Narendra (narendrago999@gmail.com)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- ONE-PAGER WORKSPACE APP TAB BAR -->
+    <nav class="app-tab-bar" aria-label="One-page sections">
+      <div class="tab-bar-container">
+        <button class="workspace-tab active" data-tab="overview">
+          <i class="fa-solid fa-user-tie"></i>
+          <span>Overview</span>
+        </button>
+        <button class="workspace-tab" data-tab="platforms">
+          <i class="fa-solid fa-cubes"></i>
+          <span>Big 3 Platforms</span>
+          <span class="tab-chip">Fabric • Databricks • Snowflake</span>
+        </button>
+        <button class="workspace-tab" data-tab="skills">
+          <i class="fa-solid fa-list-check"></i>
+          <span>Skills &amp; Roadmap</span>
+          <span class="tab-chip">8 Domains</span>
+        </button>
+        <button class="workspace-tab" data-tab="architecture">
+          <i class="fa-solid fa-network-wired"></i>
+          <span>Architecture Showcase</span>
+        </button>
+        <button class="workspace-tab" data-tab="experience">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Experience &amp; Projects</span>
+          <span class="tab-chip">4 Case Studies</span>
+        </button>
+        <button class="workspace-tab" data-tab="cover-letter">
+          <i class="fa-regular fa-envelope-open"></i>
+          <span>Cover Letter</span>
+        </button>
+        <button class="workspace-tab" data-tab="contact">
+          <i class="fa-regular fa-paper-plane"></i>
+          <span>Contact &amp; Connect</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN APP VIEWPORT (Smooth Tabbed One-Pager Panels) -->
+  <main class="app-viewport" id="app-viewport">
+    
+    <!-- PANEL 1: OVERVIEW & EXECUTIVE HERO -->
+    <section class="tab-panel active" id="panel-overview" data-panel="overview">
+      <div class="panel-content">
+        <div class="overview-grid">
+          <!-- Left: Hero Text & Credentials -->
+          <div class="overview-main">
+            <div class="tag-row">
+              <span class="tag-eyebrow"><i class="fa-solid fa-shield-halved"></i> 99%+ Financial Data Integrity Specialist</span>
+              <span class="tag-eyebrow blue"><i class="fa-solid fa-cloud"></i> Multi-Cloud Lakehouse Architect</span>
+            </div>
+
+            <h1 class="hero-heading">
+              Architecting High-Performance <br>
+              <span class="text-gradient">Data Platforms &amp; Lakehouses</span>
+            </h1>
+
+            <div class="dynamic-typed-box">
+              <span class="typed-prefix">Specialized Expertise:</span>
+              <span class="typed-text" id="typed-text"></span>
+              <span class="cursor">&nbsp;</span>
+            </div>
+
+            <p class="hero-lead">
+              Senior Data Engineer with over 3+ years of experience leading engineering teams, transitioning from hands-on pipeline engineering to architecting modern enterprise lakehouse platforms across <strong>Microsoft Fabric, Databricks, and Snowflake</strong>. Proven ability to automate legacy workflows (90% manual effort cut) and deliver 99.2% verified billing accuracy for global funds.
+            </p>
+
+            <!-- Quick Action Badges -->
+            <div class="quick-nav-pills">
+              <button class="quick-pill" data-target-tab="platforms">
+                <span class="pill-icon">⚡</span>
+                <span>Explore Big 3 Platforms</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button class="quick-pill" data-target-tab="skills">
+                <span class="pill-icon">📋</span>
+                <span>8-Domain Skills Checklist</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button class="quick-pill" data-target-tab="architecture">
+                <span class="pill-icon">🏗️</span>
+                <span>Interactive Pipeline Flow</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <!-- Key Metric Counters Bar -->
+            <div class="hero-stats-deck">
+              <div class="stat-box">
+                <div class="stat-number-row">
+                  <span class="stat-number" data-target="3" id="stat-years">0</span><span class="stat-plus">+</span>
+                </div>
+                <span class="stat-title">Years Production DE</span>
+                <span class="stat-desc">Leading teams &amp; enterprise platforms</span>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number-row">
+                  <span class="stat-number" data-target="3" id="stat-platforms">0</span>
+                </div>
+                <span class="stat-title">Core Modern Platforms</span>
+                <span class="stat-desc">Fabric, Databricks, Snowflake</span>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number-row">
+                  <span class="stat-number" data-target="99.2" data-decimals="1" id="stat-accuracy">0</span><span class="stat-plus">%</span>
+                </div>
+                <span class="stat-title">Billing Data Integrity</span>
+                <span class="stat-desc">UK Fund Management platform</span>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number-row">
+                  <span class="stat-number" data-target="90" id="stat-reduction">0</span><span class="stat-plus">%</span>
+                </div>
+                <span class="stat-title">Manual Effort Cut</span>
+                <span class="stat-desc">Automated ingestion &amp; pipelines</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Visual Profile Card -->
+          <div class="overview-sidebar">
+            <div class="profile-card glass-panel">
+              <div class="avatar-wrap">
+                <img src="assets/avatar.jpg" alt="Narendra Godara - Senior Data Engineer" class="profile-avatar">
+                <div class="avatar-halo"></div>
+                <span class="role-badge">Lead Data Engineer</span>
+              </div>
+
+              <h2 class="profile-card-name">Narendra Godara</h2>
+              <p class="profile-card-sub">Microsoft Fabric • Databricks • Snowflake • PySpark</p>
+
+              <div class="profile-quick-details">
+                <div class="detail-row">
+                  <i class="fa-solid fa-building"></i>
+                  <span>JMAN Group (Senior Data Engineer)</span>
+                </div>
+                <div class="detail-row">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Chennai, India (Open to Remote / Relocation)</span>
+                </div>
+                <div class="detail-row">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <span>B.Tech in Electronics &amp; Communication</span>
+                </div>
+              </div>
+
+              <div class="profile-cta-buttons">
+                <button class="btn btn-primary btn-block" id="overview-btn-resume">
+                  <i class="fa-solid fa-file-pdf"></i>
+                  <span>View Official Resume</span>
+                </button>
+                <button class="btn btn-outline btn-block" id="overview-btn-coverletter">
+                  <i class="fa-regular fa-file-lines"></i>
+                  <span>Read Cover Letter</span>
+                </button>
+              </div>
+
+              <div class="profile-social-dock">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle" title="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <button class="social-circle copy-btn" data-copy="narendrago999@gmail.com" title="Copy Email">
+                  <i class="fa-regular fa-envelope"></i>
+                </button>
+                <button class="social-circle copy-btn" data-copy="+919352641216" title="Copy Phone">
+                  <i class="fa-solid fa-phone"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 2: THE BIG 3 MODERN PLATFORMS -->
+    <section class="tab-panel" id="panel-platforms" data-panel="platforms">
+      <div class="panel-content">
+        <div class="panel-header">
+          <span class="section-eyebrow">Enterprise Core Specialization</span>
+          <h2 class="panel-title">Production Depth Across The Big Three Platforms</h2>
+          <p class="panel-subtitle">Designing, securing, monitoring, and optimizing workloads across Microsoft Fabric, Databricks, and Snowflake.</p>
+        </div>
+
+        <div class="platforms-deck">
+          <!-- Platform 1: Microsoft Fabric -->
+          <div class="platform-column glass-panel">
+            <div class="plat-head">
+              <div class="plat-icon-box bg-blue">⚡</div>
+              <div class="plat-meta">
+                <span class="plat-pill">Enterprise Lead</span>
+                <h3>Microsoft Fabric</h3>
+                <span class="plat-sub">OneLake &amp; Direct Lake Semantic Layer</span>
+              </div>
+            </div>
+
+            <p class="plat-summary">
+              Architecting multi-workspace Fabric environments, Bronze/Silver/Gold OneLake storage, Fabric Warehouse (T-SQL), Dataflows Gen2, Spark compute tuning, and sub-second Direct Lake Power BI reporting.
+            </p>
+
+            <div class="plat-features">
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>OneLake &amp; Shortcuts:</strong> Zero-egress direct links to AWS S3, Delta Parquet organization.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Lakehouse &amp; Warehouse:</strong> Managed vs. external Delta tables, T-SQL modeling, concurrency tuning.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Data Factory &amp; Dataflows:</strong> Dynamic Copy activities, parameterization, trigger schedules.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Spark &amp; Direct Lake:</strong> Notebook pools, session memory tuning, zero-import refresh in Power BI.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Governance &amp; Admin:</strong> RBAC, Row-Level Security (RLS), Object-Level Security (OLS), Capacity FinOps.</span>
+              </div>
+            </div>
+
+            <div class="plat-tags">
+              <span>OneLake</span><span>Direct Lake</span><span>Warehouse</span><span>Dataflows Gen2</span><span>KQL</span>
+            </div>
+          </div>
+
+          <!-- Platform 2: Databricks -->
+          <div class="platform-column glass-panel">
+            <div class="plat-head">
+              <div class="plat-icon-box bg-amber">🔥</div>
+              <div class="plat-meta">
+                <span class="plat-pill">Production Depth</span>
+                <h3>Databricks</h3>
+                <span class="plat-sub">Delta Lake, Auto Loader &amp; Unity Catalog</span>
+              </div>
+            </div>
+
+            <p class="plat-summary">
+              Harnessing Apache Spark engine internals, Delta Lake ACID transactions with time travel, automated Auto Loader streaming ingestion, and 3-tier Unity Catalog governance.
+            </p>
+
+            <div class="plat-features">
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Spark Engine Internals:</strong> Catalyst optimization, DAGs, stages, broadcast joins, shuffle tuning.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Delta Lake &amp; CDF:</strong> ACID transactions, Delta MERGE, Change Data Feed (CDF), time travel audits.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Auto Loader Ingestion:</strong> cloudFiles streaming, automatic schema inference and evolution.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Lakeflow &amp; DAB CI/CD:</strong> Lakeflow multi-task jobs, retry policies, Databricks Asset Bundles (DAB).</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Unity Catalog:</strong> Catalog.Schema.Table 3-tier namespace, column-level masking, automated lineage.</span>
+              </div>
+            </div>
+
+            <div class="plat-tags">
+              <span>Delta Lake</span><span>Unity Catalog</span><span>Auto Loader</span><span>Lakeflow</span><span>DAB CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Platform 3: Snowflake -->
+          <div class="platform-column glass-panel">
+            <div class="plat-head">
+              <div class="plat-icon-box bg-cyan">❄️</div>
+              <div class="plat-meta">
+                <span class="plat-pill">Production Depth</span>
+                <h3>Snowflake</h3>
+                <span class="plat-sub">Cloud Warehousing &amp; Dynamic Tables</span>
+              </div>
+            </div>
+
+            <p class="plat-summary">
+              Designing scalable cloud warehouses, continuous serverless Snowpipe ingestion, Change Data Capture via Streams &amp; Tasks, declarative Dynamic Tables, and FinOps auto-suspend governance.
+            </p>
+
+            <div class="plat-features">
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Core Architecture:</strong> Decoupled storage-compute, virtual warehouses, micro-partitions.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Snowpipe &amp; Continuous Load:</strong> Serverless file ingestion responding to cloud message queues.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Streams &amp; Tasks CDC:</strong> Change tracking streams, procedural tasks, MERGE statements into star schema.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Dynamic Tables &amp; Snowpark:</strong> Declarative data pipelines, target lag management, Snowpark Python UDFs.</span>
+              </div>
+              <div class="plat-feat-item">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>FinOps &amp; Query Tuning:</strong> Auto-suspend/auto-resume, resource monitors, Query Profile partition pruning.</span>
+              </div>
+            </div>
+
+            <div class="plat-tags">
+              <span>Snowpipe</span><span>Streams &amp; Tasks</span><span>Dynamic Tables</span><span>Snowpark</span><span>FinOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 3: COMPREHENSIVE SKILLS CHECKLIST & 12-WEEK ROADMAP -->
+    <section class="tab-panel" id="panel-skills" data-panel="skills">
+      <div class="panel-content">
+        <div class="panel-header">
+          <span class="section-eyebrow">Skills Verification &amp; Roadmap</span>
+          <h2 class="panel-title">The Complete Senior Data Engineer Skills Matrix</h2>
+          <p class="panel-subtitle">Comprehensive checklist covering core SQL, Python/PySpark, data modeling, multi-cloud platforms, DevOps, and technical leadership.</p>
+        </div>
+
+        <!-- Interactive Skills Controls -->
+        <div class="skills-dashboard-controls">
+          <div class="skills-filter-buttons">
+            <button class="domain-tab active" data-domain="all">All Domains (8)</button>
+            <button class="domain-tab" data-domain="sql">1. Advanced SQL &amp; DB</button>
+            <button class="domain-tab" data-domain="python">2. Python &amp; PySpark</button>
+            <button class="domain-tab" data-domain="fabric">3. Microsoft Fabric</button>
+            <button class="domain-tab" data-domain="databricks">4. Databricks &amp; Spark</button>
+            <button class="domain-tab" data-domain="snowflake">5. Snowflake</button>
+            <button class="domain-tab" data-domain="cloud">6. Cloud (Azure / AWS)</button>
+            <button class="domain-tab" data-domain="architecture">7. Architecture &amp; Modeling</button>
+            <button class="domain-tab" data-domain="devops">8. DevOps &amp; Tools</button>
+          </div>
+
+          <div class="search-box-row">
+            <i class="fa-solid fa-magnifying-glass search-ico"></i>
+            <input type="text" id="skills-search-input" placeholder="Search concepts (e.g. CDC, SCD Type 2, Dynamic Tables, Unity Catalog, dbt, Spark tuning, auto-suspend)..." aria-label="Search skills checklist">
+            <span class="search-counter" id="skills-counter-badge">8 Domains Active</span>
+          </div>
+        </div>
+
+        <!-- 8-Domain Interactive Grid -->
+        <div class="domain-cards-list" id="domain-cards-list">
+          
+          <!-- Domain 1: SQL -->
+          <div class="domain-item glass-panel" data-domain="sql" data-keywords="sql advanced sql cte window functions query tuning execution plans indexing stored procedures cdc scd type 2 surrogate keys isolation levels concurrency">
+            <div class="d-head">
+              <div class="d-icon bg-green"><i class="fa-solid fa-database"></i></div>
+              <div>
+                <h4>1. Advanced SQL and Database Engineering</h4>
+                <span class="d-sub">Must-Have Core Foundation • Senior Query Optimization</span>
+              </div>
+            </div>
+            <div class="d-grid">
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Advanced SQL:</strong> Multi-table joins, CTEs, window functions, ranking &amp; analytical aggregations</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Query Optimization:</strong> Execution plans, cost-based optimizer, partition pruning, and indexing concepts</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Programmability:</strong> Stored procedures, views, temporary tables, and dynamic SQL</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Incremental Pipelines:</strong> Deduplication, watermark incremental loads, and Change Data Capture (CDC)</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Data Modeling:</strong> SCD Type 1 and Type 2, surrogate keys, and star/snowflake modeling</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Transactions &amp; Locking:</strong> Transaction management, ACID compliance, isolation levels, concurrency</div></div>
+            </div>
+          </div>
+
+          <!-- Domain 2: Python & PySpark -->
+          <div class="domain-item glass-panel" data-domain="python" data-keywords="python pyspark pandas numpy dataframes oop distributed compute shuffles broadcast joins unit testing api integration">
+            <div class="d-head">
+              <div class="d-icon bg-blue"><i class="fa-brands fa-python"></i></div>
+              <div>
+                <h4>2. Python and PySpark</h4>
+                <span class="d-sub">Distributed Compute • Frameworks &amp; Testing</span>
+              </div>
+            </div>
+            <div class="d-grid">
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Python OOP:</strong> Functions, modular packages, custom exception handling, object-oriented pipeline design</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Pandas &amp; NumPy:</strong> Vectorized transformations, exploratory profiling, and memory-efficient manipulation</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>PySpark DataFrames:</strong> Distributed transformations, actions, joins, complex nested data types (structs/arrays)</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Spark Compute Tuning:</strong> Lazy evaluation, shuffle reduction, caching policies, and broadcast joins</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Code Quality &amp; Tests:</strong> PyTest unit testing, standardized logging frameworks, reusable connectors</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>API Integrations:</strong> REST API ingestion, pagination handling, token authentication, rate-limiting</div></div>
+            </div>
+          </div>
+
+          <!-- Domain 3: Fabric Deep-Dive -->
+          <div class="domain-item glass-panel" data-domain="fabric" data-keywords="microsoft fabric onelake lakehouse warehouse data factory pipelines dataflows gen2 spark notebooks direct lake kql eventhouse rbac">
+            <div class="d-head">
+              <div class="d-icon bg-blue"><i class="fa-solid fa-cloud"></i></div>
+              <div>
+                <h4>3. Microsoft Fabric Deep-Dive</h4>
+                <span class="d-sub">Unified Enterprise Lakehouse &amp; Direct Lake</span>
+              </div>
+            </div>
+            <div class="d-grid">
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>OneLake Architecture:</strong> Single namespace, shortcuts, multi-cloud storage organization, and access control</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Lakehouse &amp; Warehouse:</strong> Managed vs. external Delta tables, T-SQL dimensional modeling, query concurrency</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Data Factory:</strong> End-to-end pipelines, parameterization, dynamic Copy tasks, Dataflows Gen2</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Direct Lake &amp; BI:</strong> Sub-second Power BI querying directly on OneLake Delta tables without import refreshes</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Real-Time Intelligence:</strong> Eventstreams ingestion, Eventhouse, Kusto Query Language (KQL)</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Admin &amp; Security:</strong> Workspace roles, item permissions, sensitivity, capacity management, CI/CD pipelines</div></div>
+            </div>
+          </div>
+
+          <!-- Domain 4: Databricks Deep-Dive -->
+          <div class="domain-item glass-panel" data-domain="databricks" data-keywords="databricks apache spark delta lake unity catalog auto loader lakeflow structured streaming asset bundles dab time travel">
+            <div class="d-head">
+              <div class="d-icon bg-amber"><i class="fa-solid fa-fire"></i></div>
+              <div>
+                <h4>4. Databricks &amp; Apache Spark</h4>
+                <span class="d-sub">Delta Lake, Auto Loader &amp; Unity Catalog</span>
+              </div>
+            </div>
+            <div class="d-grid">
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Spark Architecture:</strong> Driver/workers, DAG execution plans, stages, tasks, shuffle partitions</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Delta Lake ACID:</strong> MERGE upserts, time travel versioning, schema enforcement, Change Data Feed (CDF)</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Auto Loader:</strong> cloudFiles streaming ingestion, automatic schema inference and evolution</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Lakeflow &amp; DAB:</strong> Lakeflow multi-task jobs, retries, Databricks Asset Bundles (DAB) automated CI/CD</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Unity Catalog:</strong> Metastore architecture, Catalog.Schema.Table 3-tier naming, column masking, lineage</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Performance Tuning:</strong> Partitioning, Z-Ordering, file compaction, serverless compute, data skew handling</div></div>
+            </div>
+          </div>
+
+          <!-- Domain 5: Snowflake Deep-Dive -->
+          <div class="domain-item glass-panel" data-domain="snowflake" data-keywords="snowflake virtual warehouses snowpipe streams tasks dynamic tables snowpark query profile time travel fail-safe finops">
+            <div class="d-head">
+              <div class="d-icon bg-cyan"><i class="fa-regular fa-snowflake"></i></div>
+              <div>
+                <h4>5. Snowflake Cloud Data Warehouse</h4>
+                <span class="d-sub">Declarative Dynamic Tables &amp; FinOps Governance</span>
+              </div>
+            </div>
+            <div class="d-grid">
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Snowflake Architecture:</strong> Decoupled storage-compute, multi-cluster virtual warehouses, micro-partitions</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Snowpipe Ingestion:</strong> Serverless continuous ingestion from external cloud stages (S3 / ADLS)</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Streams &amp; Tasks:</strong> Change Data Capture using Streams, serverless &amp; cron Tasks, triggered chains</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Dynamic Tables:</strong> Declarative data modeling, automated refresh scheduling, target lag optimization</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Snowpark Python:</strong> DataFrame API, Python stored procedures, user-defined functions (UDFs)</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>FinOps Cost Control:</strong> Auto-suspend/auto-resume, resource monitors, Query Profile partition pruning</div></div>
+            </div>
+          </div>
+
+          <!-- Domain 6: Cloud Platforms -->
+          <div class="domain-item glass-panel" data-domain="cloud" data-keywords="azure adls gen2 blob key vault adf azure monitor aws s3 iam glue lambda vpc networking">
+            <div class="d-head">
+              <div class="d-icon bg-blue"><i class="fa-solid fa-cloud-bolt"></i></div>
+              <div>
+                <h4>6. Cloud Platforms: Microsoft Azure &amp; AWS</h4>
+                <span class="d-sub">Infrastructure, Security &amp; Cross-Cloud Movement</span>
+              </div>
+            </div>
+            <div class="d-grid">
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Azure Storage:</strong> Azure Data Lake Storage Gen2 (ADLS), hierarchical namespaces, Blob tiers</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Azure Security:</strong> Azure Key Vault, Managed Identities, Service Principals, private endpoints</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Azure Telemetry:</strong> Azure Data Factory (ADF), Azure Monitor, Log Analytics, pipeline failure alerts</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>AWS S3 &amp; IAM:</strong> S3 bucket policies, IAM roles, prefix partitioning, lifecycle rules, cross-cloud sync</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>AWS Serverless:</strong> AWS Glue catalog integration, Lambda triggers for file arrivals, CloudWatch logs</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Cross-Cloud Patterns:</strong> Dynamic ingestion from AWS S3 into Azure ADLS / Fabric OneLake</div></div>
+            </div>
+          </div>
+
+          <!-- Domain 7: Architecture & Advanced Engineering -->
+          <div class="domain-item glass-panel" data-domain="architecture" data-keywords="data architecture medallion bronze silver gold data mesh data modeling delta lake parquet iceberg kafka watermarking">
+            <div class="d-head">
+              <div class="d-icon bg-purple"><i class="fa-solid fa-sitemap"></i></div>
+              <div>
+                <h4>7. Data Architecture and Advanced Engineering</h4>
+                <span class="d-sub">Medallion Design, Data Mesh &amp; Open Table Formats</span>
+              </div>
+            </div>
+            <div class="d-grid">
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Architectural Paradigms:</strong> Lakehouse vs. Warehouse trade-offs, Medallion (Bronze/Silver/Gold), Data Mesh</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Data Modeling:</strong> Conceptual, logical, physical models; star/snowflake schemas; conformed dimensions</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Incremental &amp; Streaming:</strong> Watermarking, Change Data Capture (CDC), upserts/MERGE, late-arriving events</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Open Table Formats:</strong> Delta Lake, Apache Iceberg, Parquet columnar optimization, Avro, JSON</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Event Streaming:</strong> Apache Kafka fundamentals, event time vs. processing time, delivery guarantees</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Data Quality:</strong> Null checks, uniqueness assertions, referential integrity, automated reconciliation</div></div>
+            </div>
+          </div>
+
+          <!-- Domain 8: DevOps, CI/CD & Engineering Tools -->
+          <div class="domain-item glass-panel" data-domain="devops" data-keywords="devops git ci cd github actions azure devops terraform dbt airflow docker testing observability slas">
+            <div class="d-head">
+              <div class="d-icon bg-amber"><i class="fa-solid fa-gears"></i></div>
+              <div>
+                <h4>8. DevOps, Orchestration and Engineering Tools</h4>
+                <span class="d-sub">Automation, CI/CD, dbt &amp; Production Observability</span>
+              </div>
+            </div>
+            <div class="d-grid">
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Git &amp; PR Workflows:</strong> Branching strategies, pull request reviews, merge conflict resolution, trunk-based delivery</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>CI/CD Automation:</strong> GitHub Actions &amp; Azure DevOps YAML release pipelines, automated build tests</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>dbt (Data Build Tool):</strong> Modular SQL modeling, incremental models, schema assertions, lineage documentation</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Apache Airflow:</strong> DAG dependencies, task schedules, retries, failure callbacks, historical backfills</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Infrastructure as Code:</strong> Terraform fundamentals for reproducible cloud storage &amp; workspace setup</div></div>
+              <div class="c-check"><i class="fa-solid fa-check"></i> <div><strong>Observability:</strong> Centralized logging, pipeline telemetry, SLA alerts, failure root cause analysis (RCA)</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12-Week Roadmap & Assessment Tool -->
+        <div class="assessment-card glass-panel">
+          <div class="assessment-head">
+            <div class="a-title-row">
+              <div class="d-icon bg-indigo"><i class="fa-solid fa-sliders"></i></div>
+              <div>
+                <h3>Interactive Senior Readiness Strategy &amp; 12-Week Roadmap</h3>
+                <p>Customize your preparation strategy and inspect the 3-phase structured roadmap.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="assessment-form-grid">
+            <div class="f-group">
+              <label for="quiz-experience"><strong>1. Experience Level:</strong></label>
+              <select id="quiz-experience" class="custom-select">
+                <option value="3-5" selected>3–5 years (Senior Transition)</option>
+                <option value="0-3">0–3 years (Foundational to Senior)</option>
+                <option value="5-8">5–8 years (Lead Engineer / Architect)</option>
+                <option value="8+">8+ years (Principal / Chief Architect)</option>
+              </select>
+            </div>
+            <div class="f-group">
+              <label for="quiz-platform"><strong>2. Strongest Platform:</strong></label>
+              <select id="quiz-platform" class="custom-select">
+                <option value="all" selected>All Three Platforms (Fabric, Databricks, Snowflake)</option>
+                <option value="fabric">Microsoft Fabric</option>
+                <option value="databricks">Databricks</option>
+                <option value="snowflake">Snowflake</option>
+                <option value="sql-python">SQL and Python / PySpark</option>
+              </select>
+            </div>
+            <div class="f-group">
+              <label for="quiz-goal"><strong>3. Primary Goal:</strong></label>
+              <select id="quiz-goal" class="custom-select">
+                <option value="senior-interviews" selected>Prepare for Senior Data Engineer Interviews</option>
+                <option value="skill-gaps">Identify &amp; Close Skill Gaps</option>
+                <option value="resume-polish">Improve Resume for High-Impact Senior Roles</option>
+                <option value="data-architect">Move toward Data Architect Roles</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="recommendation-result" id="recommendation-result-box">
+            <!-- Dynamically populated by script.js -->
+          </div>
+
+          <!-- 3-Phase Roadmap Visualizer -->
+          <div class="roadmap-three-phases">
+            <div class="phase-col">
+              <div class="phase-tag">Priority 1 • Weeks 1–4</div>
+              <h4>Master the Core</h4>
+              <ul>
+                <li><i class="fa-regular fa-square-check"></i> Advanced SQL, CTEs &amp; Query Tuning</li>
+                <li><i class="fa-regular fa-square-check"></i> Python OOP &amp; PySpark transformations</li>
+                <li><i class="fa-regular fa-square-check"></i> Incremental loads, CDC &amp; SCD Type 2</li>
+                <li><i class="fa-regular fa-square-check"></i> Dimensional modeling &amp; Medallion design</li>
+              </ul>
+            </div>
+            <div class="phase-col">
+              <div class="phase-tag">Priority 2 • Weeks 5–8</div>
+              <h4>Become Production-Ready</h4>
+              <ul>
+                <li><i class="fa-regular fa-square-check"></i> Spark &amp; Warehouse performance tuning</li>
+                <li><i class="fa-regular fa-square-check"></i> Pipeline monitoring, retries &amp; idempotency</li>
+                <li><i class="fa-regular fa-square-check"></i> Data quality frameworks &amp; automated tests</li>
+                <li><i class="fa-regular fa-square-check"></i> Git, CI/CD &amp; automated release strategy</li>
+              </ul>
+            </div>
+            <div class="phase-col">
+              <div class="phase-tag">Priority 3 • Weeks 9–12</div>
+              <h4>Build Senior-Level Depth</h4>
+              <ul>
+                <li><i class="fa-regular fa-square-check"></i> End-to-end data architecture design</li>
+                <li><i class="fa-regular fa-square-check"></i> Security (RBAC/RLS), Unity Catalog &amp; lineage</li>
+                <li><i class="fa-regular fa-square-check"></i> Cloud infrastructure &amp; Key Vault security</li>
+                <li><i class="fa-regular fa-square-check"></i> FinOps cost tuning &amp; technical leadership</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 4: INTERACTIVE ARCHITECTURE SHOWCASE -->
+    <section class="tab-panel" id="panel-architecture" data-panel="architecture">
+      <div class="panel-content">
+        <div class="panel-header">
+          <span class="section-eyebrow">Interactive Pipeline Architecture</span>
+          <h2 class="panel-title">End-To-End Cross-Platform Solution Design</h2>
+          <p class="panel-subtitle">Toggle between architectural patterns to inspect pipeline stages, compute frameworks, and security governance.</p>
+        </div>
+
+        <div class="architecture-interactive-deck glass-panel">
+          <div class="arch-flow-tabs">
+            <button class="flow-btn active" data-flow="fabric">1. Microsoft Fabric (OneLake &amp; Direct Lake)</button>
+            <button class="flow-btn" data-flow="databricks">2. Databricks (Auto Loader &amp; Unity Catalog)</button>
+            <button class="flow-btn" data-flow="snowflake">3. Snowflake (Snowpipe &amp; Dynamic Tables)</button>
+            <button class="flow-btn" data-flow="hybrid">4. Multi-Cloud Hybrid (AWS S3 + Azure + Fabric)</button>
+          </div>
+
+          <!-- Step Indicators Bar -->
+          <div class="pipeline-steps-nav" id="pipeline-steps-nav">
+            <!-- Dynamically populated -->
+          </div>
+
+          <!-- Pipeline Stage Detail Display -->
+          <div class="pipeline-detail-card" id="pipeline-detail-display">
+            <!-- Dynamically injected -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 5: EXPERIENCE & 4 PRODUCTION CASE STUDIES -->
+    <section class="tab-panel" id="panel-experience" data-panel="experience">
+      <div class="panel-content">
+        <div class="panel-header">
+          <span class="section-eyebrow">Proven Production Record</span>
+          <h2 class="panel-title">Professional Experience &amp; Practical Projects</h2>
+          <p class="panel-subtitle">Demonstrated trajectory of data engineering ownership, team mentorship, and high-impact enterprise delivery.</p>
+        </div>
+
+        <!-- Experience Timeline Cards -->
+        <div class="experience-deck">
+          <div class="role-card glass-panel active-role">
+            <div class="role-badge-row">
+              <span class="co-badge">JMAN Group</span>
+              <span class="role-duration"><i class="fa-regular fa-calendar"></i> November 2024 – Present</span>
+              <span class="role-loc"><i class="fa-solid fa-location-dot"></i> Chennai, India</span>
+              <span class="status-chip">Current Role • Leading 3 Engineers</span>
+            </div>
+
+            <h3 class="role-name">Senior Data Engineer (Technical Lead)</h3>
+
+            <div class="role-highlights-deck">
+              <div class="r-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>UK Fund Management Platform (99.2% Accuracy):</strong> Architected an enterprise billing data platform using Microsoft Fabric, Fivetran, and PySpark, driving 99.2% accuracy in monthly billing and automated invoicing.</div>
+              </div>
+              <div class="r-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>Team Leadership &amp; 20+ Source Ingestion:</strong> Led a team of 3 Data Engineers to design and implement scalable ETL pipelines and PySpark notebooks, unifying over 20 diverse data sources into a unified Fabric OneLake architecture.</div>
+              </div>
+              <div class="r-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>Enterprise Security &amp; Direct Lake:</strong> Implemented RBAC, Object-Level, and Row-Level Security (RLS) within Fabric, managing infrastructure with a focus on Direct Lake sub-second query performance and Spark compute tuning.</div>
+              </div>
+              <div class="r-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>ARR Insights for Exit Planning:</strong> Built scalable data models using PySpark and Fabric Data Pipelines to generate ARR insights and Power BI KPI dashboards used in strategic exit planning.</div>
+              </div>
+            </div>
+
+            <div class="role-pill-tags">
+              <span>Microsoft Fabric</span><span>Databricks</span><span>Snowflake</span><span>PySpark</span><span>OneLake</span><span>Direct Lake</span><span>dbt</span><span>Power BI</span><span>RBAC / RLS</span>
+            </div>
+          </div>
+
+          <div class="role-card glass-panel">
+            <div class="role-badge-row">
+              <span class="co-badge">JMAN Group</span>
+              <span class="role-duration"><i class="fa-regular fa-calendar"></i> July 2023 – October 2024</span>
+              <span class="role-loc"><i class="fa-solid fa-location-dot"></i> Chennai, India</span>
+            </div>
+
+            <h3 class="role-name">Data Engineer</h3>
+
+            <div class="role-highlights-deck">
+              <div class="r-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>Mass Hosting Platform (90% Time Cut):</strong> Built a scalable platform with Microsoft Fabric and PySpark, reducing manual intervention by 90% and accelerating reporting cycles.</div>
+              </div>
+              <div class="r-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>AWS S3 to OneLake Ingestion:</strong> Leveraged Fabric Data Pipelines and copy activities to automate dynamic multi-source ingestion from AWS S3 into OneLake.</div>
+              </div>
+              <div class="r-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>Automated Currency Feeds:</strong> Developed automated PySpark notebook schedules querying the Open Exchange Rates (OXR) API daily for accurate multi-currency financial records.</div>
+              </div>
+              <div class="r-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>Legacy Modernization:</strong> Delivered a project migrating legacy on-premise SSIS workflows to Fabric Dataflows Gen2 and PySpark notebooks.</div>
+              </div>
+            </div>
+
+            <div class="role-pill-tags">
+              <span>Microsoft Fabric</span><span>PySpark</span><span>AWS S3</span><span>Dataflows Gen2</span><span>OXR API</span><span>SQL Server</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Production Projects Spotlight -->
+        <div class="projects-subhead">
+          <h3><i class="fa-solid fa-laptop-code"></i> 4 Production Projects Proving Senior-Level Impact</h3>
+          <p>Click any project below to inspect the deep architectural breakdown and verifiable metrics.</p>
+        </div>
+
+        <div class="projects-quad-grid">
+          <div class="proj-box glass-panel">
+            <div class="proj-top">
+              <span class="proj-badge">Microsoft Fabric</span>
+              <span class="metric-pill"><i class="fa-solid fa-check"></i> 99.2% Accuracy</span>
+            </div>
+            <h4>End-to-End Fabric Lakehouse Billing Platform</h4>
+            <p>Ingested 20+ sources for a major UK fund management firm into OneLake Delta tables, automating monthly billing calculations with zero reconciliatory discrepancies.</p>
+            <div class="proj-mini-tags">
+              <span>Fabric</span><span>Fivetran</span><span>PySpark</span><span>Direct Lake</span>
+            </div>
+            <button class="btn btn-outline btn-sm project-modal-trigger" data-project="1">
+              <span>Inspect Deep Dive</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="proj-box glass-panel">
+            <div class="proj-top">
+              <span class="proj-badge">Databricks &amp; Spark</span>
+              <span class="metric-pill"><i class="fa-solid fa-bolt"></i> Auto Loader CDC</span>
+            </div>
+            <h4>Databricks Delta Lake CDC &amp; SCD Type 2 Engine</h4>
+            <p>Built a high-throughput PySpark workflow with Auto Loader cloudFiles ingestion, implemented Delta Lake MERGE for SCD Type 2 tracking, and governed via Unity Catalog.</p>
+            <div class="proj-mini-tags">
+              <span>Databricks</span><span>Auto Loader</span><span>Delta Lake</span><span>Unity Catalog</span>
+            </div>
+            <button class="btn btn-outline btn-sm project-modal-trigger" data-project="2">
+              <span>Inspect Deep Dive</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="proj-box glass-panel">
+            <div class="proj-top">
+              <span class="proj-badge">Snowflake FinOps</span>
+              <span class="metric-pill"><i class="fa-solid fa-chart-line"></i> Dynamic Tables</span>
+            </div>
+            <h4>Snowflake Warehouse &amp; Declarative Pipelines</h4>
+            <p>Automated serverless file loads via Snowpipe, orchestrated declarative Dynamic Tables with target lag management, and optimized warehouse costs with auto-suspend.</p>
+            <div class="proj-mini-tags">
+              <span>Snowflake</span><span>Snowpipe</span><span>Dynamic Tables</span><span>FinOps</span>
+            </div>
+            <button class="btn btn-outline btn-sm project-modal-trigger" data-project="3">
+              <span>Inspect Deep Dive</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="proj-box glass-panel">
+            <div class="proj-top">
+              <span class="proj-badge">Multi-Cloud Ingestion</span>
+              <span class="metric-pill"><i class="fa-solid fa-clock-rotate-left"></i> 90% Time Cut</span>
+            </div>
+            <h4>Mass Hosting Multi-Cloud Data Modernization</h4>
+            <p>Automated parameterized ingestion bridging AWS S3 into OneLake storage, built live OXR API currency conversion, and replaced legacy on-prem SSIS packages.</p>
+            <div class="proj-mini-tags">
+              <span>AWS S3</span><span>Fabric OneLake</span><span>PySpark</span><span>OXR API</span>
+            </div>
+            <button class="btn btn-outline btn-sm project-modal-trigger" data-project="4">
+              <span>Inspect Deep Dive</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 6: PROFESSIONAL COVER LETTER (Customizable & Isolated Print) -->
+    <section class="tab-panel" id="panel-cover-letter" data-panel="cover-letter">
+      <div class="panel-content">
+        <div class="panel-header">
+          <span class="section-eyebrow">Executive Statement</span>
+          <h2 class="panel-title">Professional Cover Letter</h2>
+          <p class="panel-subtitle">Tailored, recruiter-ready statement detailing my qualifications, multi-platform depth, technical leadership, and engineering mindset.</p>
+        </div>
+
+        <div class="cover-letter-workspace glass-panel">
+          <!-- Controls Bar -->
+          <div class="cl-controls-bar">
+            <div class="cl-field">
+              <label for="cover-role-select"><strong>Role Focus:</strong></label>
+              <select id="cover-role-select" class="custom-select">
+                <option value="senior-multi" selected>Senior Data Engineer / Tech Lead (Fabric, Databricks &amp; Snowflake)</option>
+                <option value="fabric-lead">Microsoft Fabric &amp; OneLake Architect</option>
+                <option value="databricks-lead">Databricks, PySpark &amp; Delta Lake Specialist</option>
+                <option value="snowflake-lead">Snowflake Cloud Data Warehouse Engineer</option>
+              </select>
+            </div>
+
+            <div class="cl-field">
+              <label for="recipient-company"><strong>Custom Recipient / Company:</strong></label>
+              <input type="text" id="recipient-company" placeholder="e.g. Your Organization / Team" value="Hiring Team">
+            </div>
+
+            <!-- Isolated Action Buttons -->
+            <div class="cl-actions-group">
+              <button class="btn btn-outline btn-sm" id="btn-copy-coverletter" title="Copy cover letter text to clipboard">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy Text</span>
+              </button>
+              <button class="btn btn-outline btn-sm" id="btn-download-coverletter-txt" title="Download cover letter as plain text">
+                <i class="fa-solid fa-download"></i>
+                <span>Download .TXT</span>
+              </button>
+              <button class="btn btn-primary btn-sm" id="btn-print-coverletter" title="Print Cover Letter ONLY as PDF">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Print Cover Letter (PDF)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Document Paper (Rendered executive stationery) -->
+          <div class="letter-paper" id="letter-document">
+            <div class="letter-header">
+              <div class="sender-info">
+                <h3 class="sender-name">Narendra Godara</h3>
+                <p class="sender-title">Senior Data Engineer • Microsoft Fabric, Databricks &amp; Snowflake Specialist</p>
+                <p class="sender-contact">
+                  <span><i class="fa-solid fa-location-dot"></i> Chennai, India</span> • 
+                  <span><i class="fa-solid fa-phone"></i> +91 9352641216</span> • 
+                  <span><i class="fa-solid fa-envelope"></i> narendrago999@gmail.com</span>
+                </p>
+              </div>
+              <div class="letter-date" id="letter-current-date">
+                <!-- Dynamically populated date -->
+              </div>
+            </div>
+
+            <div class="letter-recipient">
+              <p><strong>To:</strong> <span id="display-recipient-company">The Hiring Team</span></p>
+              <p><strong>Subject:</strong> <span id="display-letter-subject">Application for Senior Data Engineer / Technical Lead</span></p>
+            </div>
+
+            <div class="letter-body" id="letter-content-text">
+              <!-- Dynamically populated based on selected role -->
+            </div>
+
+            <div class="letter-footer">
+              <p>Sincerely,</p>
+              <div class="signature-block">
+                <span class="digital-signature">Narendra Godara</span>
+                <p class="signer-title">Senior Data Engineer | Microsoft Fabric, Databricks &amp; Snowflake</p>
+                <p class="signer-contact">narendrago999@gmail.com | +91 9352641216</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 7: CONTACT & CONNECT -->
+    <section class="tab-panel" id="panel-contact" data-panel="contact">
+      <div class="panel-content">
+        <div class="panel-header">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="panel-title">Let's Build Something Exceptional Together</h2>
+          <p class="panel-subtitle">Whether you have a Senior Data Engineering opening, a lakehouse architecture challenge, or want to discuss modern data platforms, I'd love to connect.</p>
+        </div>
+
+        <div class="contact-quad-deck">
+          <!-- Left: Contact Details -->
+          <div class="contact-info-col glass-panel">
+            <h3>Direct Contact Channels</h3>
+            <p>Open to full-time Senior Data Engineer, Lead Lakehouse Engineer, and Data Architect roles worldwide.</p>
+
+            <div class="contact-card-list">
+              <div class="c-card">
+                <div class="c-icon bg-blue"><i class="fa-solid fa-envelope"></i></div>
+                <div class="c-meta">
+                  <span class="c-label">Email Address</span>
+                  <a href="mailto:narendrago999@gmail.com" class="c-value">narendrago999@gmail.com</a>
+                </div>
+                <button class="copy-small-btn" data-copy="narendrago999@gmail.com" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="c-card">
+                <div class="c-icon bg-green"><i class="fa-solid fa-phone"></i></div>
+                <div class="c-meta">
+                  <span class="c-label">Phone &amp; WhatsApp</span>
+                  <a href="tel:+919352641216" class="c-value">+91 9352641216</a>
+                </div>
+                <button class="copy-small-btn" data-copy="+919352641216" title="Copy Phone">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="c-card">
+                <div class="c-icon bg-purple"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="c-meta">
+                  <span class="c-label">LinkedIn Profile</span>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="c-value">linkedin.com/in/narendra-godara</a>
+                </div>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="copy-small-btn" title="Open LinkedIn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <div class="c-card">
+                <div class="c-icon bg-amber"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="c-meta">
+                  <span class="c-label">Base Location</span>
+                  <span class="c-value">Chennai, India (Open to Relocation &amp; Remote)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="availability-notice">
+              <span class="green-dot"></span>
+              <div>
+                <strong>Notice Period &amp; Availability:</strong>
+                <p>Available to interview immediately. Ready for high-impact technical ownership.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Direct Message Form -->
+          <div class="contact-form-col glass-panel">
+            <h3>Send a Direct Message</h3>
+            <p>Drop a message to initiate discussion regarding opportunities or platform architecture.</p>
+
+            <form id="contact-form" class="direct-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Your Work Email <span class="required">*</span></label>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. sarah@enterprise.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-company">Company / Organization</label>
+                  <input type="text" id="contact-company" name="company" placeholder="e.g. Enterprise Cloud Corp">
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Topic / Position</label>
+                  <select id="contact-subject" name="subject" class="custom-select">
+                    <option value="Senior Data Engineer Role">Senior Data Engineer Role</option>
+                    <option value="Microsoft Fabric Architecture">Microsoft Fabric Architecture</option>
+                    <option value="Databricks & Spark Workload">Databricks &amp; Spark Workload</option>
+                    <option value="Snowflake Data Warehouse Project">Snowflake Data Warehouse Project</option>
+                    <option value="Consulting / Advisory">Consulting / Advisory</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Hi Narendra, we saw your portfolio and would love to speak regarding our data platform..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btn-submit-message">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Send Message via Email Client</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BOTTOM ONE-PAGER WORKSPACE CONTROLS DOCK -->
+  <footer class="app-bottom-dock">
+    <div class="dock-inner">
+      <div class="dock-left">
+        <span class="dock-brand">NG</span>
+        <span class="dock-status" id="dock-active-tab-label">Current: Overview</span>
+      </div>
+
+      <div class="dock-center">
+        <button class="dock-nav-btn" id="dock-prev-btn" title="Previous Tab (Arrow Left)">
+          <i class="fa-solid fa-chevron-left"></i> Previous
+        </button>
+        <div class="dock-indicators" id="dock-indicators">
+          <!-- Dynamically populated dots -->
+        </div>
+        <button class="dock-nav-btn" id="dock-next-btn" title="Next Tab (Arrow Right)">
+          Next <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="dock-right">
+        <span class="dock-copy">&copy; 2026 Narendra Godara • Light Modern One-Pager</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME PREVIEW & PRINT MODAL (Strictly Isolated Resume) -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-window glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 id="resume-modal-title"><i class="fa-solid fa-file-pdf"></i> Official Curriculum Vitae</h3>
+          <span class="modal-sub">Narendra Godara • Senior Data Engineer (Fabric, Databricks, Snowflake)</span>
+        </div>
+        <div class="modal-controls">
+          <button class="btn btn-primary btn-sm" id="btn-print-resume" title="Print or Save Resume ONLY as PDF">
+            <i class="fa-solid fa-file-pdf"></i>
+            <span>Print Resume (PDF)</span>
+          </button>
+          <button class="btn btn-outline btn-sm" id="btn-download-resume-txt" title="Download ATS Resume as plain text file">
+            <i class="fa-solid fa-download"></i>
+            <span>Download .TXT</span>
+          </button>
+          <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="printable-resume" id="printable-resume-area">
+          <div class="resume-sheet">
+            <header class="resume-sheet-header">
+              <h1 class="r-name">Narendra Godara</h1>
+              <div class="r-contact-bar">
+                <span><i class="fa-solid fa-phone"></i> +91 9352641216</span>
+                <span>•</span>
+                <span><i class="fa-solid fa-envelope"></i> narendrago999@gmail.com</span>
+                <span>•</span>
+                <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/narendra-godara</span>
+              </div>
+            </header>
+
+            <section class="r-section">
+              <h2 class="r-heading">PROFESSIONAL PROFILE</h2>
+              <p class="r-text">
+                Senior Data Engineer specializing in the design and delivery of high-performance data architectures using 
+                <strong>Microsoft Fabric, Databricks, Snowflake, PySpark, and Python</strong>. Over 3 years of experience transitioning from hands-on pipeline 
+                development to leading data engineering teams and driving strategic technical initiatives. Proven ability to 
+                architect hybrid lakehouse solutions, automate legacy workflows, implement Change Data Capture (CDC) &amp; SCD Type 2 data modeling, 
+                and ensure <strong>99%+ data integrity</strong> for critical financial systems. A strategic communicator who partners directly with business stakeholders to align data 
+                infrastructure with enterprise goals, consistently reducing processing times and enabling rapid analytical insights.
+              </p>
+            </section>
+
+            <section class="r-section">
+              <h2 class="r-heading">TECHNICAL SKILLS &amp; PLATFORMS</h2>
+              <ul class="r-skills-list">
+                <li><strong>Modern Data Platforms:</strong> Microsoft Fabric (OneLake, Lakehouse, Warehouse, Direct Lake), Databricks (Delta Lake, Unity Catalog, Auto Loader), Snowflake (Snowpipe, Streams &amp; Tasks, Dynamic Tables)</li>
+                <li><strong>Core Languages &amp; Compute:</strong> Python (OOP, Pandas, NumPy, APIs), PySpark (DataFrames, Shuffles, Partitioning, Broadcast Joins), SQL (Advanced CTEs, Window Functions, Query Tuning, Stored Procedures), JavaScript</li>
+                <li><strong>ETL &amp; Transformation Tools:</strong> Fabric Data Pipeline, dbt (Data Build Tool - Modular Models, Tests), Azure Data Factory (ADF), Fivetran</li>
+                <li><strong>Data Modeling &amp; Architecture:</strong> Medallion Architecture (Bronze/Silver/Gold), Star &amp; Snowflake Schema, SCD Type 1 &amp; Type 2, CDC, Ingestion Frameworks, Conformed Dimensions</li>
+                <li><strong>Cloud Services:</strong> Azure (ADLS Gen2, Blob, Key Vault, Azure Monitor), AWS (S3, IAM, Glue fundamentals)</li>
+                <li><strong>DevOps &amp; Orchestration:</strong> Git, GitHub Actions, Azure DevOps CI/CD, Apache Airflow (DAGs, Retries), Databricks Asset Bundles (DAB)</li>
+                <li><strong>Data Visualization &amp; BI:</strong> Power BI (Direct Lake Mode, Complex DAX Measures, ARR &amp; Exit KPI Dashboards)</li>
+                <li><strong>Security &amp; Governance:</strong> Role-Based Access Controls (RBAC), Object-Level (OLS), Row-Level Security (RLS), Unity Catalog Lineage, FinOps Cost Optimization</li>
+              </ul>
+            </section>
+
+            <section class="r-section">
+              <h2 class="r-heading">PROFESSIONAL EXPERIENCE</h2>
+              
+              <div class="r-job">
+                <div class="r-job-head">
+                  <div>
+                    <h3 class="r-job-title">Senior Data Engineer</h3>
+                    <div class="r-company">JMAN Group</div>
+                  </div>
+                  <div class="r-dates">
+                    <span>November 2024 – Present</span>
+                    <span>Chennai, India</span>
+                  </div>
+                </div>
+                <ul class="r-bullets">
+                  <li>Architected a robust, end-to-end data platform for a major UK-based fund management firm utilizing Microsoft Fabric, Fivetran, and PySpark—driving <strong>99.2% accuracy</strong> in monthly billing and invoicing processes.</li>
+                  <li>Led a team of 3 Data Engineers to design and implement scalable ETL workflows using Fabric Data Pipelines and PySpark notebooks, integrating over 20 diverse data sources (including custom-built connectors) into a unified Fabric OneLake architecture.</li>
+                  <li>Implemented comprehensive security models including role-based access controls (RBAC), Object-Level, and Row-Level Security within Microsoft Fabric, managing infrastructure with a focus on Direct Lake performance, Spark compute tuning, and enterprise-grade security.</li>
+                  <li>Designed a hybrid lakehouse-warehouse solution within the Fabric ecosystem for a multinational enterprise, ensuring 99% integrity of financial data and reducing reporting cycle times by 30%.</li>
+                  <li>Built scalable data models and orchestrated execution using PySpark and Fabric Data Pipelines to generate ARR insights and develop integrated Power BI KPI dashboards for strategic exit planning.</li>
+                  <li>Developed and optimized complex data transformation workflows using PySpark DataFrames for data modeling, cleansing, and curation within the Fabric environment, ensuring data integrity and streamlining cross-team analytics.</li>
+                  <li>Embedded as an Integrated Data Engineer, driving stakeholder engagement across multiple business entities to align data strategy with organizational goals and ensure the delivery of impactful, analytics-ready solutions.</li>
+                </ul>
+              </div>
+
+              <div class="r-job">
+                <div class="r-job-head">
+                  <div>
+                    <h3 class="r-job-title">Data Engineer</h3>
+                    <div class="r-company">JMAN Group</div>
+                  </div>
+                  <div class="r-dates">
+                    <span>July 2023 – October 2024</span>
+                    <span>Chennai, India</span>
+                  </div>
+                </div>
+                <ul class="r-bullets">
+                  <li>Built a scalable data platform for a mass hosting business using Microsoft Fabric and PySpark, enabling seamless data transformation and reporting, while reducing manual intervention time by <strong>90%</strong>.</li>
+                  <li>Leveraged Fabric Data Pipelines and automated copy activities to handle dynamic data ingestion from multiple sources, efficiently loading data from AWS S3 into Fabric OneLake.</li>
+                  <li>Developed automated notebook schedules using PySpark to retrieve and update daily exchange rates from the OXR API, enhancing data accuracy and timeliness.</li>
+                  <li>Delivered a project migrating legacy on-premise processes to Fabric Dataflows Gen2 (or PySpark notebook workflows), streamlining transformation processes and improving overall efficiency.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="r-section">
+              <h2 class="r-heading">EDUCATION</h2>
+              <div class="r-edu-item">
+                <div class="r-edu-head">
+                  <strong>Bachelor of Technology in Electronics &amp; Communication</strong>
+                  <span>June 2019 – May 2023</span>
+                </div>
+                <div class="r-edu-sub">Jaipur, Rajasthan, India</div>
+              </div>
+              <div class="r-edu-item">
+                <div class="r-edu-head">
+                  <strong>Senior Secondary School (Science &amp; Mathematics)</strong>
+                  <span>April 2017 – March 2018</span>
+                </div>
+                <div class="r-edu-sub">Nagaur, Rajasthan, India</div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CASE STUDY DEEP DIVE MODAL -->
+  <div class="modal-overlay" id="project-detail-modal" role="dialog" aria-modal="true">
+    <div class="modal-window glass-panel project-modal-box">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 id="p-modal-title">Case Study Deep Dive</h3>
+          <span class="modal-sub" id="p-modal-subtitle">Architecture &amp; Engineering Breakdown</span>
+        </div>
+        <button class="modal-close-btn" id="p-modal-close-btn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="p-modal-body">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toast-notify" role="alert" aria-live="polite">
+    <div class="toast-icon" id="toast-icon"><i class="fa-solid fa-check"></i></div>
+    <div class="toast-message" id="toast-msg">Action successful</div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
